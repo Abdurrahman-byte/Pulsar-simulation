@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pulsar Magnetosphere Renderer</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div id="hint">drag: orbit &nbsp;|&nbsp; wheel/pinch: zoom</div>
+<div id="ui"><b>Oblique-Rotator Pulsar</b>
+<div class="row">Spin rate<input id="spin" type="range" min="0.3" max="10" step="0.1" value="4"></div>
+<div class="row">Magnetic tilt<input id="tilt" type="range" min="0" max="90" step="1" value="35"></div>
+<div class="row">Jet intensity<input id="jet" type="range" min="0" max="2" step="0.05" value="1.1"></div>
+<div class="row">Beam opening<input id="open" type="range" min="4" max="35" step="1" value="14"></div>
+</div>
+<canvas id="c"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body></html>
